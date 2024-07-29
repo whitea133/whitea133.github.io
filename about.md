@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hello There! Arnold here!
+Hello There! Whitea here!
 
 ### 关于本博客
 Ciallo～(∠・ω< )⌒☆
