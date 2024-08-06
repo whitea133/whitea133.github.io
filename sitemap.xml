@@ -9,68 +9,98 @@
 
 <url>
   <loc>https://whitea133.github.io/</loc>
-  <lastmod>2024-08-02T03:38:31+00:00</lastmod>
+  <lastmod>2024-08-06T15:26:49+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://whitea133.github.io/about/</loc>
-  <lastmod>2024-08-02T03:38:31+00:00</lastmod>
+  <lastmod>2024-08-06T15:26:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://whitea133.github.io/archive/</loc>
-  <lastmod>2024-08-02T03:38:31+00:00</lastmod>
+  <lastmod>2024-08-06T15:26:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://whitea133.github.io/tags/</loc>
-  <lastmod>2024-08-02T03:38:31+00:00</lastmod>
+  <lastmod>2024-08-06T15:26:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://whitea133.github.io/likes/</loc>
-  <lastmod>2024-08-02T03:38:31+00:00</lastmod>
+  <lastmod>2024-08-06T15:26:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://whitea133.github.io/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8Cfileinclude/</loc>
+  <lastmod>2024-08-06T15:26:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://whitea133.github.io/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8Ceasyupload/</loc>
+  <lastmod>2024-08-06T15:26:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://whitea133.github.io/%E5%BC%BA%E7%BD%91%E6%9D%AF2019%E9%9A%8F%E4%BE%BF%E6%B3%A81/</loc>
+  <lastmod>2024-08-06T15:26:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://whitea133.github.io/SUCTF-_2019_EasySQL1/</loc>
+  <lastmod>2024-08-06T15:26:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://whitea133.github.io/SQL%E6%8A%A5%E9%94%99%E6%B3%A8%E5%85%A51/</loc>
+  <lastmod>2024-08-06T15:26:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://whitea133.github.io/%E7%8C%9C%E6%B5%8BSQL%E6%B3%A8%E5%85%A5%E7%9A%84%E5%90%8E%E7%AB%AF%E8%AF%AD%E5%8F%A5/</loc>
-  <lastmod>2024-08-02T03:38:31+00:00</lastmod>
+  <lastmod>2024-08-06T15:26:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://whitea133.github.io/Mysql%E4%B8%AD%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97/</loc>
-  <lastmod>2024-08-02T03:38:31+00:00</lastmod>
+  <lastmod>2024-08-06T15:26:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://whitea133.github.io/Ping%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E2/</loc>
-  <lastmod>2024-08-02T03:38:31+00:00</lastmod>
+  <lastmod>2024-08-06T15:26:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://whitea133.github.io/page2/</loc>
+  <lastmod>2024-08-06T15:26:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://whitea133.github.io/Ping%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E1/</loc>
-  <lastmod>2024-08-02T03:38:31+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2024-08-06T15:26:49+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://whitea133.github.io/Ping%E4%B8%8E%E9%9D%B6%E6%9C%BA%E7%B3%BB%E7%BB%9F/</loc>
-  <lastmod>2024-08-02T03:38:31+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2024-08-06T15:26:49+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://whitea133.github.io/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE1/</loc>
-  <lastmod>2024-08-02T03:38:31+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2024-08-06T15:26:49+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://whitea133.github.io/%E4%B8%87%E8%83%BD%E5%AF%86%E7%A0%81%E8%A7%A3%E9%A2%98/</loc>
-  <lastmod>2024-08-02T03:38:31+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2024-08-06T15:26:49+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://whitea133.github.io/github_pages/</loc>
-  <lastmod>2024-08-02T03:38:31+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2024-08-06T15:26:49+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
