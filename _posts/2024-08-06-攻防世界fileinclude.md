@@ -2,11 +2,12 @@
 layout:     post
 title:      攻防世界fileinclude
 date:       2024-08-06
-tags: [Web, fileinclude, 攻防世界, PHP伪协议， cookie， 文件包含]
+tags: [Web, fileinclude, 攻防世界, PHP伪协议, cookie, 文件包含]
 comments: true
 author: Whitea
 toc: true
 ---
+
 攻防世界fileinclude做题笔记。
 
 <!-- more -->
