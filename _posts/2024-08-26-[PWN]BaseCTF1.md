@@ -117,7 +117,7 @@ python运行exp得到权限,`cat flag` 即可
 
 BaseCTF{77160d94-72a4-48fd-a163-ecef8a3352ac}
 
-### [Week1] 我把她丢了
+### 5， [Week1] 我把她丢了
 
 这题不太会，看的WP
 
@@ -165,7 +165,7 @@ exp如下：
 
 BaseCTF{80099f51-e4f6-4786-a021-c831e7d97820}
 
-### [Week1] 彻底失去她
+### 6. [Week1] 彻底失去她
 
 checksec:
 
