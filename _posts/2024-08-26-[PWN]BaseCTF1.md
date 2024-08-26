@@ -20,7 +20,7 @@ BaseCTF新生赛，尝试做做PWN题
 
 究极基础题，nc一波，cat一下就行了
 
-<div align=center><img src="../images/2024/08/23/pwn_1.png" alt="pwn" border="0" width="70%" height="80%"></div>
+<div align=center><img src="../images/2024/08/26/pwn_1.png" alt="pwn" border="0" width="70%" height="80%"></div>
 
 
 BaseCTF{be60ff6a-2e27-45c0-903f-6026c5e95ea4}
@@ -39,7 +39,7 @@ BaseCTF{be60ff6a-2e27-45c0-903f-6026c5e95ea4}
 
 具体操作如下：
 
-<div align=center><img src="../images/2024/08/23/pwn_2.png" alt="pwn" border="0" width="70%" height="80%"></div>
+<div align=center><img src="../images/2024/08/26/pwn_2.png" alt="pwn" border="0" width="70%" height="80%"></div>
 
 这里题目只允许用`echo`命令，`ls`命令用不了
 
@@ -55,7 +55,7 @@ BaseCTF{e6a529c3-3350-464c-9a5f-81a8ef2a35ca}
 
 先`checkesc 文件`一下，看看有没有什么保护
 
-<div align=center><img src="../images/2024/08/23/pwn_3.png" alt="pwn" border="0" width="70%" height="80%"></div>
+<div align=center><img src="../images/2024/08/26/pwn_3.png" alt="pwn" border="0" width="70%" height="80%"></div>
 
 可以看到栈没有保护
 
@@ -63,33 +63,33 @@ IDA反编译一下文件，看看代码
 
 主函数如下：
 
-<div align=center><img src="../images/2024/08/23/pwn_4.png" alt="pwn" border="0" width="70%" height="80%"></div>
+<div align=center><img src="../images/2024/08/26/pwn_4.png" alt="pwn" border="0" width="70%" height="80%"></div>
 
 可以看到有`read`函数，可以用来利用栈溢出漏洞
 
 接下来，找找`buf`的**地址以及返回地址**
 
-<div align=center><img src="../images/2024/08/23/pwn_5.png" alt="pwn" border="0" width="70%" height="80%"></div>
+<div align=center><img src="../images/2024/08/26/pwn_5.png" alt="pwn" border="0" width="70%" height="80%"></div>
 
 分别是`0x20`和`0x8`,由此可以计算出偏移地址
 
 然后再找系统命令的地址，也就是`/bin/sh`指令的地址：`0x4011BB`
 
-<div align=center><img src="../images/2024/08/23/pwn_6.png" alt="pwn" border="0" width="70%" height="80%"></div>
+<div align=center><img src="../images/2024/08/26/pwn_6.png" alt="pwn" border="0" width="70%" height="80%"></div>
 
 最后写一个exp就可以搞定
 
 exp如下：
 
-<div align=center><img src="../images/2024/08/23/pwn_7.png" alt="pwn" border="0" width="70%" height="80%"></div>
+<div align=center><img src="../images/2024/08/26/pwn_7.png" alt="pwn" border="0" width="70%" height="80%"></div>
 
 python3运行一下exp
 
-<div align=center><img src="../images/2024/08/23/pwn_8.png" alt="pwn" border="0" width="70%" height="80%"></div>
+<div align=center><img src="../images/2024/08/26/pwn_8.png" alt="pwn" border="0" width="70%" height="80%"></div>
 
 最后再`ls`,`cat flag`即可
 
-<div align=center><img src="../images/2024/08/23/pwn_9.png" alt="pwn" border="0" width="70%" height="80%"></div>
+<div align=center><img src="../images/2024/08/26/pwn_9.png" alt="pwn" border="0" width="70%" height="80%"></div>
 
 BaseCTF{b64dce26-b050-45ae-87b3-c1c73c25e54f}
 
@@ -97,11 +97,11 @@ BaseCTF{b64dce26-b050-45ae-87b3-c1c73c25e54f}
 
 checksec一下,64位的系统:
 
-<div align=center><img src="../images/2024/08/23/pwn_10.png" alt="pwn" border="0" width="70%" height="80%"></div>
+<div align=center><img src="../images/2024/08/26/pwn_10.png" alt="pwn" border="0" width="70%" height="80%"></div>
 
 IDA反汇编一下：
 
-<div align=center><img src="../images/2024/08/23/pwn_11.png" alt="pwn" border="0" width="70%" height="80%"></div>
+<div align=center><img src="../images/2024/08/26/pwn_11.png" alt="pwn" border="0" width="70%" height="80%"></div>
 
 看到有一个read()函数，题目大概就是让我们写一个shellcode，让后read函数读取，最终得到shell权限.
 
@@ -109,11 +109,11 @@ IDA反汇编一下：
 
 exp如下：
 
-<div align=center><img src="../images/2024/08/23/pwn_12.png" alt="pwn" border="0" width="70%" height="80%"></div>
+<div align=center><img src="../images/2024/08/26/pwn_12.png" alt="pwn" border="0" width="70%" height="80%"></div>
 
 python运行exp得到权限,`cat flag` 即可
 
-<div align=center><img src="../images/2024/08/23/pwn_13.png" alt="pwn" border="0" width="70%" height="80%"></div>
+<div align=center><img src="../images/2024/08/26/pwn_13.png" alt="pwn" border="0" width="70%" height="80%"></div>
 
 BaseCTF{77160d94-72a4-48fd-a163-ecef8a3352ac}
 
@@ -123,11 +123,11 @@ BaseCTF{77160d94-72a4-48fd-a163-ecef8a3352ac}
 
 checksec:
 
-<div align=center><img src="../images/2024/08/23/pwn_14.png" alt="pwn" border="0" width="70%" height="80%"></div>
+<div align=center><img src="../images/2024/08/26/pwn_14.png" alt="pwn" border="0" width="70%" height="80%"></div>
 
 IDA反编译：
 
-<div align=center><img src="../images/2024/08/23/pwn_15.png" alt="pwn" border="0" width="70%" height="80%"></div>
+<div align=center><img src="../images/2024/08/26/pwn_15.png" alt="pwn" border="0" width="70%" height="80%"></div>
 
 主函数套了个vuln函数，函数还有个read()可以栈溢出
 
@@ -139,7 +139,7 @@ IDA反编译：
 
 获得到的**gadget**：
 
-<div align=center><img src="../images/2024/08/23/pwn_18.png" alt="pwn" border="0" width="70%" height="80%"></div>
+<div align=center><img src="../images/2024/08/26/pwn_18.png" alt="pwn" border="0" width="70%" height="80%"></div>
 
 然后写ROP的exp即可，注意这里要进行**system函数的栈平衡**（在64的程序文件中，system函数的内存地址必须要16字节对齐，即内存地址末端必须是0，而不是8）
 
@@ -147,7 +147,7 @@ IDA反编译：
 
 比如下面红色括号包括的地址，就是**栈地址**
 
-<div align=center><img src="../images/2024/08/23/pwn_19.png" alt="pwn" border="0" width="70%" height="80%"></div>
+<div align=center><img src="../images/2024/08/26/pwn_19.png" alt="pwn" border="0" width="70%" height="80%"></div>
 
 **可以看到储存地址的每一个字宽都占8个字节。比如s，就是从地址0x00到0x08，共八个字节（8 dup）; r 也同理,从地址0x08到0x10,共八个字节(8 dup)。**
 
@@ -159,7 +159,7 @@ IDA反编译：
 
 exp如下：
 
-<div align=center><img src="../images/2024/08/23/pwn_16.png" alt="pwn" border="0" width="70%" height="80%"></div>
+<div align=center><img src="../images/2024/08/26/pwn_16.png" alt="pwn" border="0" width="70%" height="80%"></div>
 
 执行后，同样的套路得到flag
 
@@ -169,7 +169,7 @@ BaseCTF{80099f51-e4f6-4786-a021-c831e7d97820}
 
 checksec:
 
-<div align=center><img src="../images/2024/08/23/pwn_17.png" alt="pwn" border="0" width="70%" height="80%"></div>
+<div align=center><img src="../images/2024/08/26/pwn_17.png" alt="pwn" border="0" width="70%" height="80%"></div>
 
 IDA反编译：
 
@@ -181,7 +181,13 @@ IDA反编译：
 
 同样要注意要不要进行`system函数的栈平衡`
 
-read(0,buf,0x10)函数要用到三个参数，所以我们要控制三个寄存器，按顺序分别是`rdi、rsi、rdx`
+我们自己需要构造一个read函数，构造成read(0,buf,0x10)函数要用到三个参数，所以我们要控制三个寄存器，按顺序分别是`rdi、rsi、rdx`
+
+和上一道题一样，用工具找到ROPgadget找可以用的gadget。
+
+结果如下：
+
+<div align=center><img src="../images/2024/08/26/pwn_20.png" alt="pwn" border="0" width="80%" height="80%"></div>
 
 说一下这里**read的第三个参数为什么是0x10**
 
@@ -191,25 +197,25 @@ read(0,buf,0x10)函数要用到三个参数，所以我们要控制三个寄存�
 
 AI解释如下：
 
-<div align=center><img src="../images/2024/08/23/pwn_22.png" alt="pwn" border="0" width="80%" height="80%"></div>
+<div align=center><img src="../images/2024/08/26/pwn_22.png" alt="pwn" border="0" width="80%" height="80%"></div>
 
 其实我们在这道题中，也可以规定为read(0,buf,0x08)，也就是最大为8个字节
 
 因为，我们要传入的字符串`/bin/sh\x00`为8个字节（一个字符一个字节，\x00 也表示一个字节）
 
-AI说明：<div align=center><img src="../images/2024/08/23/pwn_21.png" alt="pwn" border="0" width="80%" height="80%"></div>
+AI说明：<div align=center><img src="../images/2024/08/26/pwn_21.png" alt="pwn" border="0" width="80%" height="80%"></div>
 
 只要读取的内容不超过规定自己规定的字节数即可。
 
 `bss字段`的地址：
 
-AI说明：<div align=center><img src="../images/2024/08/23/pwn_23.png" alt="pwn" border="0" width="80%" height="80%"></div>
+AI说明：<div align=center><img src="../images/2024/08/26/pwn_23.png" alt="pwn" border="0" width="80%" height="80%"></div>
 
 每一个小黄条可以储存一字节的字符
 
 思路出来了，找东西，拼ROP链条,写exp即可:
 
-AI说明：<div align=center><img src="../images/2024/08/23/pwn_24.png" alt="pwn" border="0" width="80%" height="80%"></div>
+AI说明：<div align=center><img src="../images/2024/08/26/pwn_24.png" alt="pwn" border="0" width="80%" height="80%"></div>
 
 这里的第15行，`payload+=p64(pop_rsi_ret)+p64(bss)`
 
@@ -226,7 +232,7 @@ exp大概的进行过程就是：
 
 最后得到指令权限，cat flag即可
 
-<div align=center><img src="../images/2024/08/23/pwn_25.png" alt="pwn" border="0" width="80%" height="80%"></div>
+<div align=center><img src="../images/2024/08/26/pwn_25.png" alt="pwn" border="0" width="80%" height="80%"></div>
 
 BaseCTF{03549f5a-19c8-4a77-98c0-26b2426ce390}
 
