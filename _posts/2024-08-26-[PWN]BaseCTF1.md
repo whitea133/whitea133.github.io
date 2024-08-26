@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      [PWN]BaseCTF-1
+title:      BaseCTF-1-PWN
 date:       2024-08-26
 tags: [PWN,  BaseCTF, 比赛]
 comments: true
