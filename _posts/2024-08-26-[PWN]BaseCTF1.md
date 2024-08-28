@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      BaseCTF-1-PWN
+title:      BaseCTF2045-Week1-PWN
 date:       2024-08-26
-tags: [PWN,  BaseCTF, 比赛]
+tags: [PWN,  BaseCTF2024, 比赛]
 comments: true
 author: Whitea
 toc: true
@@ -203,19 +203,25 @@ AI解释如下：
 
 因为，我们要传入的字符串`/bin/sh\x00`为8个字节（一个字符一个字节，\x00 也表示一个字节）
 
-AI说明：<div align=center><img src="../images/2024/08/26/pwn_21.png" alt="pwn" border="0" width="80%" height="80%"></div>
+AI说明：
+
+<div align=center><img src="../images/2024/08/26/pwn_21.png" alt="pwn" border="0" width="80%" height="80%"></div>
 
 只要读取的内容不超过规定自己规定的字节数即可。
 
 `bss字段`的地址：
 
-AI说明：<div align=center><img src="../images/2024/08/26/pwn_23.png" alt="pwn" border="0" width="80%" height="80%"></div>
+AI说明：
+
+<div align=center><img src="../images/2024/08/26/pwn_23.png" alt="pwn" border="0" width="80%" height="80%"></div>
 
 每一个小黄条可以储存一字节的字符
 
 思路出来了，找东西，拼ROP链条,写exp即可:
 
-AI说明：<div align=center><img src="../images/2024/08/26/pwn_24.png" alt="pwn" border="0" width="80%" height="80%"></div>
+AI说明：
+
+<div align=center><img src="../images/2024/08/26/pwn_24.png" alt="pwn" border="0" width="80%" height="80%"></div>
 
 这里的第15行，`payload+=p64(pop_rsi_ret)+p64(bss)`
 
