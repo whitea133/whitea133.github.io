@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      BaseCTF2045-Week1-PWN
+title:      BaseCTF2024-Week1-PWN
 date:       2024-08-26
 tags: [PWN,  BaseCTF2024, 比赛]
 comments: true
