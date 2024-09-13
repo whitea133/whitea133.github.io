@@ -105,6 +105,10 @@ io.interactive() #接管命令
 
 这里我提供另外一种exp写法，这个方法用了**LibcSearcher**这个python库
 
+具体方法可以参考以下文章:
+
+[pwn刷题笔记（ret2libc、ROP）](https://www.cnblogs.com/summer14/p/17358186.html)
+
 这个库的**使用前提**：**保证可执行程序使用的libc版本和远程靶机的版本一致(同就要通过patchelf来修改)**
 
 使用这个**库的好处**：**不需要用到题目附件给的libc.so.6文件(以防万一附件真不给你libc.so.6)**
